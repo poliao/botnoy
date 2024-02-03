@@ -31,9 +31,9 @@ for iteration in range(1, 200):
     screenshot = screenshot_full.crop((region_left, region_top, region_right, region_bottom))
 
     # Save the captured image for reference
-    # screenshot.save(f"screenshot_iteration_{iteration}.png")
-    # screenshot.show()
-    # ดึงค่าสีที่ต้องการตรวจสอบจากรูปภาพ
+    screenshot.save(f"screenshot_iteration_{iteration}.png")
+    screenshot.show()
+    
     # ดึงสีของทุก pixel ในพื้นที่
     all_colors = list(screenshot_full.crop((region_left, region_top, region_right, region_bottom)).getdata())
 
