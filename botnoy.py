@@ -2,7 +2,7 @@ from uiautomator2 import connect
 from PIL import ImageDraw, Image
 
 # กำหนด IP ของ MuMu
-emu_ip = "127.0.0.1:16416"
+emu_ip = "127.0.0.1:16384"
 
 # เปิดการเชื่อมต่อกับ MuMu
 d = connect(emu_ip)
