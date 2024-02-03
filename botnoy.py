@@ -2,10 +2,14 @@ from uiautomator2 import connect
 from PIL import ImageDraw, Image
 
 # กำหนด IP ของ MuMu
+<<<<<<< HEAD
 emu_ip = "127.0.0.1:16384"
+=======
+emu_ip = "127.0.0.1:7555"
+>>>>>>> a03c2f0c9a2de3765c29441b0738a60bd5f3cd05
 
 # เปิดการเชื่อมต่อกับ MuMu
-d = connect(emu_ip)
+d = connect('<emu_ip>')
 
 # กำหนดขนาดและตำแหน่งที่ต้องการดึงสี
 region_left = 200
@@ -39,7 +43,8 @@ for iteration in range(1, 200):
 
     for color in all_colors:
         if all(start <= value <= end for start, value, end in zip(target_color_start, color, target_color_end)):
-            
+            print("Color found in the specified range (between black and gray)")
+            d.click(click_position[0], click_position[1])
             print("Color found in the specified range (between black and gray)")
 
     else:
