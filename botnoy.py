@@ -44,7 +44,7 @@ for iteration in range(1, 200):
             d.click(click_position[0], click_position[1])
             print("Color found in the specified range (between black and gray)")
             color_found = True
-            break  # หยุดการทำงานทันทีหลังจากพบสี
+            
 
     if color_found:
         break  # หยุดลูปทั้งหมดหลังจากพบสี
