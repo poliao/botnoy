@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
+from uiautomator2 import connect
+import time
 
-# แปลงค่าสีจาก RGB เป็น HSV
-rgb_color = np.uint8([[[0, 0, 0]]])
-hsv_color = cv2.cvtColor(rgb_color, cv2.COLOR_RGB2HSV)
-print(hsv_color)
+d = uiautomator2.connect("emulator_ip:16384")  # replace with your emulator IP and port
+d.stream.start()
